@@ -1,0 +1,41 @@
+.search {
+    position: relative;
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    padding: 5px;
+    background-color: #000;
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 1;
+
+    input {
+        width: 210px;
+        height: 90%;
+        margin-left: 10px;
+        padding: 5px;
+        border: 2px solid #fec526;
+        outline: none;
+    }
+
+    &::after, &::before {
+        position: absolute;
+        content: '';
+        background-color: #fec526;
+        width: 10px;
+        height: 100%;
+        top: 0;
+    }
+
+    &::after {
+        left: 0;
+    }
+
+    &::before {
+        right: 0;
+    }
+}

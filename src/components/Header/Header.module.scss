@@ -1,0 +1,16 @@
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    background-color: #000;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
